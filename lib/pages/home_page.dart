@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lesson9/pages/Lesson1.dart';
 import 'package:lesson9/pages/sign_up_page.dart';
 
+import 'lesson2.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
   static final String id = "home_page_id";
@@ -88,7 +90,7 @@ class _HomePageState extends State<HomePage>
                     const SizedBox(width: 10,),
                     GestureDetector(
                       onTap: (){
-                        Navigator.pushNamed(context, Lesson1.id);
+                        Navigator.pushNamed(context, Lseeon2.id);
                       },
                       child: Text('Sign up',style: TextStyle(color: Colors.black,
                       fontSize: 20,fontWeight: FontWeight.bold),),

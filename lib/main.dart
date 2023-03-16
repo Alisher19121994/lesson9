@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lesson9/pages/Lesson1.dart';
 import 'package:lesson9/pages/home_page.dart';
+import 'package:lesson9/pages/lesson2.dart';
 import 'package:lesson9/pages/sign_up_page.dart';
 
 void main() {
@@ -17,7 +18,9 @@ class MyApp extends StatelessWidget {
       routes: {
         HomePage.id: (context) => HomePage(),
         SignUpPage.id: (context) => SignUpPage(),
-        Lesson1.id: (context) => Lesson1()
+        Lesson1.id: (context) => Lesson1(),
+        Lseeon2.id: (context) => Lseeon2(),
+
       },
     );
   }
