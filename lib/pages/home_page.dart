@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lesson9/pages/Lesson1.dart';
+import 'package:lesson9/pages/apple_products.dart';
+import 'package:lesson9/pages/apple_shop_page.dart';
 import 'package:lesson9/pages/sign_up_page.dart';
 
 import 'lesson2.dart';
@@ -69,12 +71,14 @@ class _HomePageState extends State<HomePage>
               Container(
                 height: 48,
                 child:  ElevatedButton(
-                    onPressed: (){
-                      final isValid = formKey.currentState!.validate();
-                      if(isValid){
-                        Navigator.pushNamed(context, Lesson1.id);
 
-                      }
+                    onPressed: (){
+                      Navigator.pushNamed(context, AppleProducts.id);
+                      //final isValid = formKey.currentState!.validate();
+                      // if(isValid){
+                      //  // Navigator.pushNamed(context, Lesson1.id);
+                      //
+                      // }
                     },
                     child:const Text('Sign in')
                 ) ,
