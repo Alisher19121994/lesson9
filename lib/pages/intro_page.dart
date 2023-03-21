@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lesson9/pages/Homes.dart';
+import 'package:lesson9/pages/new_homework.dart';
 import 'package:lesson9/pages/sign_up_page.dart';
 import 'package:lesson9/pages/utils/Strings.dart';
 
@@ -12,6 +14,7 @@ class IntroPage extends StatefulWidget {
 }
 
 class _IntroPageState extends State<IntroPage> {
+
   late PageController _pageController;
   int currentIndex = 0;
 
@@ -74,7 +77,7 @@ class _IntroPageState extends State<IntroPage> {
                     SizedBox(height: 121,),
                     GestureDetector(
                       onTap: () {
-                        Navigator.pushReplacementNamed(context, SignUpPage.id);
+                        Navigator.pushReplacementNamed(context, NewHomeWork.id);
                       },
                       child: Padding(
                         padding: EdgeInsets.only(right: 20, left: 20),
