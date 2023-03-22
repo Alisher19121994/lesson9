@@ -4,6 +4,8 @@ import 'package:lesson9/pages/Lesson1.dart';
 import 'package:lesson9/pages/apple_products.dart';
 import 'package:lesson9/pages/apple_shop_page.dart';
 import 'package:lesson9/pages/home_page.dart';
+import 'package:lesson9/pages/hotel_homework.dart';
+import 'package:lesson9/pages/hotels.dart';
 import 'package:lesson9/pages/intro_page.dart';
 import 'package:lesson9/pages/lesson2.dart';
 import 'package:lesson9/pages/new_homework.dart';
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: IntroPage(),
+      home: HotelHW(),
       routes: {
         HomePage.id: (context) => HomePage(),
         SignUpPage.id: (context) => SignUpPage(),
@@ -29,6 +31,8 @@ class MyApp extends StatelessWidget {
         AppleProducts.id: (context) => AppleProducts(),
         IntroPage.id: (context) => IntroPage(),
         Homes.id: (context) => Homes(),
+        Hotels.id: (context) => Hotels(),
+        HotelHW.id: (context) => HotelHW(),
         NewHomeWork.id: (context) => NewHomeWork()
       },
     );
