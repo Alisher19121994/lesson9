@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class HotelHW extends StatefulWidget {
   const HotelHW({Key? key}) : super(key: key);
 
-  static final String id = "hotelHW";
+  static const String id = "hotelHW";
   @override
   State<HotelHW> createState() => _HotelHWState();
 }
@@ -39,11 +39,13 @@ class _HotelHWState extends State<HotelHW> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
-                    Text("Best Hotels Ever",style: TextStyle(color: Colors.white,
+                    Text(
+                      "Best Hotels Ever",style: TextStyle(color: Colors.white,
                     fontSize: 30,fontWeight: FontWeight.bold),textAlign:
                       TextAlign.center,),
                     SizedBox(height: 30,),
-                    Container(padding: EdgeInsets.symmetric(vertical: 3),
+                    Container(
+                      padding: EdgeInsets.symmetric(vertical: 3),
                     margin: EdgeInsets.symmetric(horizontal: 40),
                     height: 50,
                       decoration: BoxDecoration(
@@ -69,7 +71,8 @@ class _HotelHWState extends State<HotelHW> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children:<Widget> [
-                  Text("Business Hotels",style: TextStyle(
+                  Text(
+                    "Business Hotels",style: TextStyle(
                     color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17
                   ),),
                   SizedBox(height: 10,),
